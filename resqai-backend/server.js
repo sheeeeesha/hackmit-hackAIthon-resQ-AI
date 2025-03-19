@@ -364,10 +364,15 @@ const admin = require("firebase-admin");
 const { GoogleGenerativeAI } = require("@google/generative-ai");
 
 // 🔹 Initialize Firebase
-const serviceAccount = require("./firebase-admin.json");
+
+
+
+const serviceAccount = JSON.parse(process.env.FIREBASE_ADMIN_CREDENTIALS);
+
 admin.initializeApp({
   credential: admin.credential.cert(serviceAccount),
 });
+
 const db = admin.firestore();
 
 // 🔹 Initialize Gemini API
