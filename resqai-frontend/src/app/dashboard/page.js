@@ -6,7 +6,7 @@ import { useState, useEffect } from 'react';
 import { collection, getDocs, onSnapshot, query, orderBy, where, updateDoc, doc, getDoc } from 'firebase/firestore'; // Import updateDoc
 import { db } from '../../config/firebaseConfig';
 import EmergencyList from '../../components/EmergencyList';
-import MapView from '../../components/MapView';
+const MapView = dynamic(() => import('../../components/MapView'), { ssr: false });
 import TranscriptDetail from '../../components/TranscriptDetails';
 import Header from '../../components/Header';
 
