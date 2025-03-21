@@ -121,7 +121,7 @@ export default function Dashboard() {
           )}
         </div> */}
 
-        {/* <div className="w-1/4 bg-white shadow-md overflow-y-auto">
+        <div className="w-1/4 bg-white shadow-md overflow-y-auto">
           {selectedEmergency ? (
             <TranscriptDetail emergency={selectedEmergency} transcript={transcript} />
           ) : (
@@ -129,7 +129,7 @@ export default function Dashboard() {
               Select an emergency to view details
             </div>
           )}
-        </div> */}
+        </div>
       </div>
     </div>
   );
