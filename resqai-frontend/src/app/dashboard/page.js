@@ -7,7 +7,7 @@ import { collection, getDocs, onSnapshot, query, orderBy, where, updateDoc, doc,
 import { db } from '../../config/firebaseConfig';
 import EmergencyList from '../../components/EmergencyList';
 // import MapView from '../../components/MapView';
-// import TranscriptDetail from '../../components/TranscriptDetails';
+import TranscriptDetail from '../../components/TranscriptDetails';
 import Header from '../../components/Header';
 
 export default function Dashboard() {
