@@ -5,8 +5,7 @@ import { collection, getDocs, onSnapshot, query, orderBy, where, updateDoc, doc,
 import { db } from '../../config/firebaseConfig';
 import EmergencyList from '../../components/EmergencyList';
 import dynamic from 'next/dynamic';
-
-const MapView = dynamic(() => import('@/components/MapView'), { ssr: false });
+const MapView = dynamic(() => import('../../components/MapView'), { ssr: false });
 
 import TranscriptDetail from '../../components/TranscriptDetails';
 import Header from '../../components/Header';
