@@ -6,8 +6,8 @@ import { useState, useEffect } from 'react';
 import { collection, getDocs, onSnapshot, query, orderBy, where, updateDoc, doc, getDoc } from 'firebase/firestore'; // Import updateDoc
 import { db } from '../../config/firebaseConfig';
 import EmergencyList from '../../components/EmergencyList';
-import MapView from '../../components/MapView';
-import TranscriptDetail from '../../components/TranscriptDetails';
+// import MapView from '../../components/MapView';
+// import TranscriptDetail from '../../components/TranscriptDetails';
 import Header from '../../components/Header';
 
 export default function Dashboard() {
@@ -111,7 +111,7 @@ export default function Dashboard() {
           )}
         </div>
 
-        <div className="w-2/4 bg-gray-200">
+        {/* <div className="w-2/4 bg-gray-200">
           {selectedEmergency ? (
             <MapView emergency={selectedEmergency} />
           ) : (
@@ -119,9 +119,9 @@ export default function Dashboard() {
               Select an emergency to view location
             </div>
           )}
-        </div>
+        </div> */}
 
-        <div className="w-1/4 bg-white shadow-md overflow-y-auto">
+        {/* <div className="w-1/4 bg-white shadow-md overflow-y-auto">
           {selectedEmergency ? (
             <TranscriptDetail emergency={selectedEmergency} transcript={transcript} />
           ) : (
@@ -129,7 +129,7 @@ export default function Dashboard() {
               Select an emergency to view details
             </div>
           )}
-        </div>
+        </div> */}
       </div>
     </div>
   );
