@@ -14,6 +14,9 @@ const geistMono = Geist_Mono({
 export const metadata = {
   title: "resQ-ai",
   description: "Accelerating emergency response with AI precision.",
+  icons: {
+    icon: '/resqai_logo.svg', // Add the path to your favicon here
+  },
 };
 
 export default function RootLayout({ children }) {
