@@ -98,3 +98,19 @@ ResQAI is an innovative emergency response system designed to streamline and exp
 2.  **View Emergencies on Dashboard:**
     -   Open the frontend dashboard URL provided by Vercel.
     -   View active emergencies, filter them, and select an emergency to see detailed information.
+
+## Team Contributions
+
+* **Ashish Tamhankar:**
+    * Developed the backend API endpoints for transcript processing.
+    * Integrated Google Gemini API for NER and emotion analysis.
+    * Handled the Firebase integration and database management.
+    * Managed the Vercel deployment and frontend optimization.
+* **Vinay Yadav:**
+    * Designed and implemented the React-based frontend dashboard.
+    * Integrated React Leaflet for map visualization.
+    * Helped with project documentation
+* **Chinmay Jadhav:**
+    * Researched and integrated the Vapi.ai API for real-time transcription.
+    * Conducted thorough testing and debugging of the system.
+    * Helped with the project documentation.
